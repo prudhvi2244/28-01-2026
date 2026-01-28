@@ -1,0 +1,86 @@
+/*
+
+Method Signature:
+======================
+Method name and Parameters
+
+ public static void f1(int a,int b) => prototype
+
+ f1(int a,int b) => Method Signature
+
+ int f2() => f2() => Method Signature
+
+ Note : Return Type is not a part of Method Signature
+
+
+String Class:
+======================
+1)String is a class from java.lang package
+2)If we want to Represent group of characters then we can use String Class
+3)String is Immutable, It means once String object is created we cannot perform any changes ,
+If we try to perform any changes, then immediately a new object is created
+
+There are 2 ways to create String class object:
+=====================================================
+1)String s="Prudhvi"
+2)String s=new String("Prudhvi")
+
+javap command : javap packagename.ClassName|InterfaceName|AbstractClassName
+
+String Class Constructors:
+====================================
+  1)public java.lang.String() : 
+  2)public java.lang.String(java.lang.String)
+  3)public java.lang.String(char[]) : 
+  13)public java.lang.String(byte[]) : 
+  14)public java.lang.String(java.lang.StringBuffer)  :  
+  15)public java.lang.String(java.lang.StringBuilder) : 
+
+  
+  4)public java.lang.String(char[], int, int);
+  5)public java.lang.String(int[], int, int);
+  6)public java.lang.String(byte[], int, int, int);
+  7)public java.lang.String(byte[], int);
+  8)public java.lang.String(byte[], int, int, java.lang.String) throws java.io.UnsupportedEncodingException;
+  9)public java.lang.String(byte[], int, int, java.nio.charset.Charset);
+  10)public java.lang.String(byte[], java.lang.String) throws java.io.UnsupportedEncodingException;
+  11)public java.lang.String(byte[], java.nio.charset.Charset);
+  12)public java.lang.String(byte[], int, int);
+  
+
+  Important String Class Methods :
+  ========================================
+  1)public int length();
+  2)public boolean isEmpty();
+  3)public char charAt(int index);
+   10)public java.lang.String toLowerCase();
+  11)public java.lang.String toUpperCase();
+
+
+  4)public boolean equals(java.lang.Object);
+  5)public boolean equalsIgnoreCase(java.lang.String);
+
+  6)public boolean startsWith(java.lang.String);
+  7)public boolean endsWith(java.lang.String);
+
+  8)public java.lang.String substring(int startIndex);
+  9)public java.lang.String substring(int startIndex, int endIndex);
+ 
+  public char[] toCharArray();
+  public java.lang.String[] split(java.lang.String);
+
+  14)public boolean isBlank();
+  15)public java.lang.String trim();
+  16)public java.lang.String strip();
+  17)public java.lang.String concat(java.lang.String);
+  18)public java.lang.String replace(char, char);
+  19) public int indexOf(int);
+  20)public int indexOf(int, int);
+  21)public int lastIndexOf(int);
+
+
+1)Reverse a String
+
+
+
+*/
