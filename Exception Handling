@@ -1,0 +1,113 @@
+/*
+ 
+Exception Handling :
+======================
+Exception : An Unwanted, UnExpected Event that disturbs the normal flow of execution is called
+Exception
+
+Abnormal Termination : Without executing the rest of the code if program terminates Without
+suddenly then it is called Abnormal Termination
+
+It is higly recommended to handle the exception for smooth termination of application.
+
+If Exception is not handled then it is always Abnormal Termination
+
+Keywords related to Exception Handling
+============================================
+1)try
+2)catch
+
+3)finally
+
+4)throws
+5)throw
+
+
+try:
+================
+1)Risky code we have to place inside try block
+2)try block without catch or finally is not possible
+3)if we want try with catch then order is try>catch
+4)if we want try with finally then order is try>finally
+5)if we want try with catch and finally then order is try>catch>finally
+6)we can have multiple catch blocks for a single try block, but order of catch block must be
+from child to parent
+
+what is Risky Code :
+===============================
+The Code that may throw exception is called Risky Code
+
+
+syntax of try block:
+=========================
+try{
+    // risky code
+}
+
+
+catch block:
+===========================
+1)Inside catch block we place handling code
+2)catch block cannot exist independently
+
+syntax:
+=================
+catch(ExceptionName variableName){
+    // Handling code
+}
+
+Note : Object is the root class for all classes in java
+       Throwable is root class for all exceptions in java
+       a)Exception
+       b)Error
+
+finally block:
+========================
+1)To place Re-Source Clean up logic, finally block is the best choice
+2)finally block will get executed always (i.e with execption and without exception)
+
+ex : closing the file
+     closing the connection with database
+     nullifying the object
+
+syntax:
+=======================
+finally{
+    // clean up logic
+}
+
+
+checked Exception :
+============================
+1)Exceptions those are checked by compiler at the time of Compilation are called Checked Exceptions
+2)For checked exceptions compulsorily we have to use try catch or throws
+
+  Examples:
+  ====================
+  1)IOException
+  2)SQLException
+
+UnChecked Exception :
+============================
+1)Exceptions those are not checked by compiler at the time of Compilation are called UnChecked Exceptions
+
+
+  Examples:
+  ====================
+  1)NumberFormatException
+  2)ArithmeticException
+  3)ClassCastException
+  4)NullPointerException
+  5)ArrayIndexOutOfBoundsException
+
+
+throws:
+===================
+1)throws keyword delegates the responsibility of exception handling to the caller method
+2)In General throws cannot avoid abormal termination
+3)we have to use throws after method parameters
+
+void f1() throws ExceptionName{
+    
+}
+ 
